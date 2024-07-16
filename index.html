@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="scrollup" onclick="scrollToTop()">
+        ↑
+    </button>
+    <header class="header section">
+        <div class="header_container container">
+            <a href="#">
+            <div class="logo">
+                <svg width="118" height="37" viewBox="0 0 118 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.341 26.3809L33.194 32.4669C28.5073 35.2367 23.2024 36.7905 17.762 36.9869C7.72399 37.3229 0.983002 31.3959 0.983002 21.0409C0.983002 8.92589 9.309 0.57189 21.683 0.70789C25.9294 0.646727 30.1058 1.79398 33.725 4.01589L30.372 11.6469C28.2391 10.8072 25.9641 10.3875 23.672 10.4109C17.562 10.4109 14.58 14.3759 14.409 19.4979C14.233 24.7909 17.504 28.2979 22.349 28.7609C26.4959 29.2187 30.6832 28.3877 34.341 26.3809ZM56.791 28.2649C56.537 30.0859 57.212 31.2109 61.446 29.3579L62.968 33.8579C57.675 36.3499 54.462 36.9889 52.345 36.9889C49.126 36.9889 47.22 35.6759 46.501 33.7709C44.4979 35.8016 41.7733 36.9583 38.921 36.9889C34.432 36.9889 31.721 33.6889 32.357 29.2399L34.517 13.9949H44.765L42.943 26.8259C42.8852 27.071 42.883 27.3259 42.9365 27.572C42.99 27.8181 43.0979 28.049 43.2523 28.248C43.4067 28.4469 43.6036 28.6088 43.8287 28.7218C44.0537 28.8348 44.3012 28.896 44.553 28.9009C45.0961 28.8547 45.6069 28.6234 45.9999 28.2457C46.3929 27.868 46.6443 27.3668 46.712 26.8259L48.533 13.9949H58.781L56.791 28.2649ZM77.158 16.1999L78.682 5.14789H88.93L85.669 28.4379C85.458 30.0889 86.214 31.3249 90.448 29.0319L92.124 33.7959C88.8419 35.8173 85.078 36.9223 81.224 36.9959C78.091 36.9549 76.1 35.5559 75.424 33.4809C74.5733 34.5893 73.4759 35.4841 72.219 36.0943C70.962 36.7044 69.5801 37.0131 68.183 36.9959C63.44 36.9959 60.683 32.5959 60.683 27.0869C60.683 19.3379 65.637 13.4519 71.819 13.4519C72.869 13.4192 73.91 13.6543 74.8441 14.135C75.7781 14.6158 76.5744 15.3264 77.158 16.1999ZM76.777 24.5849C76.777 22.8059 75.803 21.4089 74.277 21.4089C72.287 21.4089 70.72 23.4419 70.72 25.7709C70.72 27.5489 71.652 28.9469 73.22 28.9469C75.168 28.9419 76.777 26.9099 76.777 24.5809V24.5849ZM106.5 16.1999L106.8 13.9999H117.048L115.015 28.4399C114.803 30.0909 115.82 30.3879 117.386 30.0069L117.025 34.3919C115.23 35.9659 112.954 36.8828 110.569 36.9919C107.435 36.9919 105.445 35.5519 104.769 33.4769C103.919 34.5853 102.821 35.4801 101.565 36.0902C100.308 36.7004 98.926 37.0091 97.529 36.9919C92.785 36.9919 90.029 32.5919 90.029 27.0829C90.029 19.5029 94.983 13.4479 101.166 13.4479C102.215 13.4166 103.256 13.6527 104.189 14.1341C105.122 14.6156 105.917 15.3264 106.5 16.1999ZM106.119 24.5849C106.119 22.8059 105.145 21.4089 103.619 21.4089C101.629 21.4089 100.062 23.4419 100.062 25.7709C100.062 27.5489 100.994 28.9469 102.562 28.9469C104.512 28.9419 106.122 26.9099 106.122 24.5809L106.119 24.5849Z" fill="white"/>
+                </svg>
+
+            </div>
+            </a>
+            
+            <nav class="nav">
+                <button class="burger">
+                    <div class="bar"></div>
+                </button>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+
+
+                </ul>
+
+
+            </nav>
+            
+
+
+        </div>
+        <div class="text_block hidden">
+            <h1>Hi there! We are the new kids on the block<br> 
+                and we build awesome websites and mobile apps.</h1>
+                <a href="#">
+            <button class="work_with">WORK WITH US!</button>
+                </a>
+
+        </div>
+
+
+
+    </header>
+    <nav class="mobil_nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">WORK</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+    </nav>
+    <section class="services section">
+        <div class="services_container container">
+            <div class="text_box">
+            <h1 class="section_title">SERVICES WE PROVIDE</h1>
+            <div class="line"></div>
+            <p class="section_subtitle">We are working with both individuals and businesses from all over the globe <br>
+                to create awesome websites and applications.</p>
+            </div>
+            <div class="services_cards">
+            <div class="cards hidden1">
+                <div class="picture">
+                    <img src="/Images/icon-branding 1.png">
+                </div>
+                <div class="card_content">
+                    <h2>BRANDING</h2>
+                    <p>Lorem ipsum dolor sit amet, 
+                        consectetuer adipiscing elit, 
+                        sed diam nonummy nibh.</p>
+                </div>
+
+            </div>
+            <div class="cards hidden1">
+                <div class="picture">
+                    <img src="/Images/icon-design 1.png">
+                </div>
+                <div class="card_content">
+                    <h2>DESIGNE</h2>
+                    <p> Sed ut perspiciatis unde 
+                        omnis iste natus error sit 
+                        voluptatem  </p>
+                </div>
+
+            </div>
+            <div class="cards hidden1">
+                <div class="picture">
+                    <img src="/Images/icon-development 1.png">
+                </div>
+                <div class="card_content">
+                    <h2>DEVELOPMENT</h2>
+                    <p>At vero eos et accusamus et 
+                        iusto odio dignissimos qui 
+                        blanditiis praesentium.</p>
+                </div>
+
+            </div>
+            <div class="cards hidden1">
+                <div class="picture">
+                    <img src="/Images/icon-rocket 1.png">
+                </div>
+                <div class="card_content">
+                    <h2>ROCKET SCIENCE</h2>
+                    <p>Et harum quidem rerum est 
+                        et expedita distinctio. 
+                        Nam libero tempore.</p>
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+        </div>
+        
+
+    </section>
+    <section class="team section"> <div class="services_container container">
+        <div class="text_box">
+        <h1 class="section_title team_text">MEET OUR BEAUTIFUL TEAM</h1>
+        <div class="line"></div>
+        <p class="section_subtitle team_text">We are a small team of designers and developers, who help brands with big ideas.</p>
+        </div>
+        <div class="services_cards">
+        <div class="cards2 hidden1">
+            <a href="#">
+                <div class="picture pic2">
+                    <img src="/Images/Base.png">
+                </div></a>
+            <div class="card_content2">
+                <h2>ANNE HATHAWAY</h2>
+                <a href="#">CEO / Marketing Guru</a>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, 
+                    sed diam nonummy nibh 
+                    euismod tincidunt ut laoreet 
+                    dolore magna.</p>
+            </div>
+            <div class="contacts">
+                <a href="#">
+<div class="icon"><svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.979 0.939929H5.328C4.88872 0.897675 4.4455 0.952033 4.02933 1.09886C3.61316 1.2457 3.23408 1.48147 2.91856 1.79003C2.60305 2.09859 2.35872 2.47245 2.20265 2.88524C2.04659 3.29804 1.98254 3.7398 2.015 4.17992V5.98998H0.0149994L0.0209961 7.99999H2.01401L1.98399 16.01H5.01401V8.03002L6.752 7.99999L7.37601 5.98998H4.98199V3.92992C4.98184 3.79779 5.00995 3.66725 5.06441 3.54686C5.11887 3.42648 5.19842 3.31904 5.29776 3.23192C5.3971 3.1448 5.51392 3.08002 5.64038 3.04174C5.76684 3.00345 5.90003 2.99261 6.03101 3.01H6.96899L6.979 0.939929Z" fill="white"/>
+    </svg>
+    </div></a><a href="#">
+<div class="icon"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.984 1.65987C16.3498 1.94541 15.6751 2.13099 14.984 2.20992C15.712 1.76496 16.2555 1.07279 16.515 0.259968C15.8333 0.670139 15.0849 0.95791 14.304 1.11007C13.8253 0.595272 13.2019 0.237491 12.5159 0.0841867C11.8299 -0.0691178 11.1136 -0.0108905 10.4613 0.251179C9.80905 0.513248 9.25154 0.966876 8.8623 1.5522C8.47307 2.13753 8.27041 2.82714 8.28101 3.52999C8.28067 3.8025 8.31085 4.07425 8.371 4.34005C6.98146 4.26554 5.6235 3.89726 4.38672 3.25948C3.14994 2.6217 2.06248 1.72872 1.19601 0.639851C0.886333 1.18195 0.723613 1.79556 0.723999 2.41988C0.721356 2.99937 0.861257 3.57077 1.13138 4.08345C1.4015 4.59614 1.79356 5.03458 2.27301 5.36007C1.71854 5.34945 1.17588 5.19786 0.696014 4.91988V4.96993C0.691559 5.78002 0.966978 6.56678 1.47571 7.19722C1.98444 7.82767 2.69526 8.26309 3.48801 8.42989C3.18955 8.51412 2.88113 8.55797 2.57101 8.56002C2.35071 8.56206 2.13088 8.5385 1.91599 8.48995C2.13205 9.18914 2.56235 9.80269 3.14606 10.2441C3.72976 10.6855 4.4374 10.9324 5.16901 10.9499C3.94136 11.9304 2.41612 12.463 0.845001 12.4599C0.567486 12.4635 0.290095 12.4467 0.0150146 12.4099C1.59973 13.4507 3.45507 14.0036 5.35101 14C6.66425 13.9978 7.96399 13.735 9.1749 13.2268C10.3858 12.7185 11.4838 11.975 12.4051 11.0393C13.3265 10.1035 14.0529 8.994 14.5423 7.77535C15.0317 6.5567 15.2743 5.25301 15.256 3.9399C15.256 3.7899 15.256 3.63995 15.246 3.48995C15.9269 2.9852 16.515 2.36592 16.984 1.65987Z" fill="white"/>
+    </svg></div></a>
+<a href="#"><div class="icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46399 1.91991C3.46424 2.16019 3.41356 2.39792 3.31528 2.61718C3.217 2.83644 3.07336 3.03244 2.89383 3.19213C2.71429 3.35182 2.50297 3.47165 2.27374 3.54369C2.04452 3.61574 1.80261 3.63837 1.564 3.6101C1.23585 3.57319 0.925425 3.44201 0.670258 3.23241C0.415091 3.02282 0.226102 2.74367 0.12616 2.42895C0.0262176 2.11422 0.0196198 1.77739 0.107117 1.45898C0.194614 1.14056 0.372468 0.854219 0.619202 0.634756C0.865935 0.415294 1.17097 0.271935 1.49741 0.222159C1.82385 0.172383 2.15772 0.218284 2.45865 0.354239C2.75958 0.490194 3.01467 0.710408 3.19308 0.988272C3.3715 1.26614 3.46559 1.5897 3.46399 1.91991ZM0 16.01V4.98998H3.01099V16.01H0ZM5.01901 4.98998H7.70001L8.021 6.1101C8.3798 5.59872 8.86695 5.1908 9.43344 4.92748C9.99993 4.66416 10.6257 4.55474 11.248 4.6101C13.469 4.6101 15.004 5.90009 15.004 9.10009V15.98H12.004V9.58007C12.0245 9.2798 11.9832 8.97848 11.8826 8.69481C11.7821 8.41115 11.6243 8.15117 11.4193 7.9309C11.2142 7.71063 10.9661 7.5346 10.6903 7.41405C10.4145 7.29351 10.117 7.23091 9.81601 7.22997C9.43429 7.23477 9.06362 7.35877 8.75592 7.58471C8.44822 7.81064 8.21888 8.12722 8.10001 8.48998C8.01348 8.76118 7.9759 9.0457 7.98901 9.33007V15.98H5.01199V4.98998H5.01901Z" fill="white"/>
+    </svg></div></a>
+<a href="#"><div class="icon"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.60901 1.17993C1.09601 1.44993 6.84699 5.19008 7.09799 5.33008C7.38151 5.46179 7.69037 5.53003 8.00299 5.53003C8.31562 5.53003 8.62447 5.46179 8.90799 5.33008C9.15899 5.19008 14.908 1.44993 15.397 1.17993C15.886 0.909932 16.347 0.0600586 15.451 0.0600586H0.550996C-0.340003 0.0600586 0.12101 0.909932 0.60901 1.17993ZM15.609 3.23999C15.055 3.53999 9.252 7.20989 8.909 7.38989C8.62548 7.52161 8.31662 7.58984 8.004 7.58984C7.69138 7.58984 7.38252 7.52161 7.099 7.38989C6.76 7.20989 0.956988 3.53999 0.398988 3.23999C0.00898847 3.02999 0.0130021 3.26996 0.0130021 3.45996V11.02C0.0514699 11.2688 0.168161 11.4988 0.346163 11.6768C0.524164 11.8548 0.754217 11.9715 1.00299 12.01H15C15.2489 11.9716 15.4791 11.855 15.6573 11.677C15.8354 11.499 15.9523 11.2689 15.991 11.02V3.45996C15.991 3.26996 15.994 3.02999 15.6 3.23999H15.609Z" fill="white"/>
+    </svg></div></a>
+
+            </div>
+
+        </div>
+        <div class="cards2 hidden1">
+            <a href="#">
+                <div class="picture pic2">
+                    <img src="/Images/Base (1).png">
+                </div></a>
+            <div class="card_content2">
+                <h2>Kate Upton</h2>
+                <a href="#">Creative Director</a>
+                <p> Duis aute irure dolor in in 
+                    voluptate velit esse cillum 
+                    dolore fugiat nulla pariatur. 
+                    Excepteur sint occaecat non 
+                    diam proident.  </p>
+            </div>
+            <div class="contacts">
+                <a href="#">
+                    
+                    <div class="icon"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.984 1.65987C16.3498 1.94541 15.6751 2.13099 14.984 2.20992C15.712 1.76496 16.2555 1.07279 16.515 0.259968C15.8333 0.670139 15.0849 0.95791 14.304 1.11007C13.8253 0.595272 13.2019 0.237491 12.5159 0.0841867C11.8299 -0.0691178 11.1136 -0.0108905 10.4613 0.251179C9.80905 0.513248 9.25154 0.966876 8.8623 1.5522C8.47307 2.13753 8.27041 2.82714 8.28101 3.52999C8.28067 3.8025 8.31085 4.07425 8.371 4.34005C6.98146 4.26554 5.6235 3.89726 4.38672 3.25948C3.14994 2.6217 2.06248 1.72872 1.19601 0.639851C0.886333 1.18195 0.723613 1.79556 0.723999 2.41988C0.721356 2.99937 0.861257 3.57077 1.13138 4.08345C1.4015 4.59614 1.79356 5.03458 2.27301 5.36007C1.71854 5.34945 1.17588 5.19786 0.696014 4.91988V4.96993C0.691559 5.78002 0.966978 6.56678 1.47571 7.19722C1.98444 7.82767 2.69526 8.26309 3.48801 8.42989C3.18955 8.51412 2.88113 8.55797 2.57101 8.56002C2.35071 8.56206 2.13088 8.5385 1.91599 8.48995C2.13205 9.18914 2.56235 9.80269 3.14606 10.2441C3.72976 10.6855 4.4374 10.9324 5.16901 10.9499C3.94136 11.9304 2.41612 12.463 0.845001 12.4599C0.567486 12.4635 0.290095 12.4467 0.0150146 12.4099C1.59973 13.4507 3.45507 14.0036 5.35101 14C6.66425 13.9978 7.96399 13.735 9.1749 13.2268C10.3858 12.7185 11.4838 11.975 12.4051 11.0393C13.3265 10.1035 14.0529 8.994 14.5423 7.77535C15.0317 6.5567 15.2743 5.25301 15.256 3.9399C15.256 3.7899 15.256 3.63995 15.246 3.48995C15.9269 2.9852 16.515 2.36592 16.984 1.65987Z" fill="white"/>
+                        </svg></div></a>
+                    <a href="#"><div class="icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46399 1.91991C3.46424 2.16019 3.41356 2.39792 3.31528 2.61718C3.217 2.83644 3.07336 3.03244 2.89383 3.19213C2.71429 3.35182 2.50297 3.47165 2.27374 3.54369C2.04452 3.61574 1.80261 3.63837 1.564 3.6101C1.23585 3.57319 0.925425 3.44201 0.670258 3.23241C0.415091 3.02282 0.226102 2.74367 0.12616 2.42895C0.0262176 2.11422 0.0196198 1.77739 0.107117 1.45898C0.194614 1.14056 0.372468 0.854219 0.619202 0.634756C0.865935 0.415294 1.17097 0.271935 1.49741 0.222159C1.82385 0.172383 2.15772 0.218284 2.45865 0.354239C2.75958 0.490194 3.01467 0.710408 3.19308 0.988272C3.3715 1.26614 3.46559 1.5897 3.46399 1.91991ZM0 16.01V4.98998H3.01099V16.01H0ZM5.01901 4.98998H7.70001L8.021 6.1101C8.3798 5.59872 8.86695 5.1908 9.43344 4.92748C9.99993 4.66416 10.6257 4.55474 11.248 4.6101C13.469 4.6101 15.004 5.90009 15.004 9.10009V15.98H12.004V9.58007C12.0245 9.2798 11.9832 8.97848 11.8826 8.69481C11.7821 8.41115 11.6243 8.15117 11.4193 7.9309C11.2142 7.71063 10.9661 7.5346 10.6903 7.41405C10.4145 7.29351 10.117 7.23091 9.81601 7.22997C9.43429 7.23477 9.06362 7.35877 8.75592 7.58471C8.44822 7.81064 8.21888 8.12722 8.10001 8.48998C8.01348 8.76118 7.9759 9.0457 7.98901 9.33007V15.98H5.01199V4.98998H5.01901Z" fill="white"/>
+                        </svg></div></a>
+                    <a href="#"><div class="icon"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.60901 1.17993C1.09601 1.44993 6.84699 5.19008 7.09799 5.33008C7.38151 5.46179 7.69037 5.53003 8.00299 5.53003C8.31562 5.53003 8.62447 5.46179 8.90799 5.33008C9.15899 5.19008 14.908 1.44993 15.397 1.17993C15.886 0.909932 16.347 0.0600586 15.451 0.0600586H0.550996C-0.340003 0.0600586 0.12101 0.909932 0.60901 1.17993ZM15.609 3.23999C15.055 3.53999 9.252 7.20989 8.909 7.38989C8.62548 7.52161 8.31662 7.58984 8.004 7.58984C7.69138 7.58984 7.38252 7.52161 7.099 7.38989C6.76 7.20989 0.956988 3.53999 0.398988 3.23999C0.00898847 3.02999 0.0130021 3.26996 0.0130021 3.45996V11.02C0.0514699 11.2688 0.168161 11.4988 0.346163 11.6768C0.524164 11.8548 0.754217 11.9715 1.00299 12.01H15C15.2489 11.9716 15.4791 11.855 15.6573 11.677C15.8354 11.499 15.9523 11.2689 15.991 11.02V3.45996C15.991 3.26996 15.994 3.02999 15.6 3.23999H15.609Z" fill="white"/>
+                        </svg></div></a>
+                
+             </div>
+                
+
+        </div>
+        <div class="cards2 hidden1">
+            <a href="#">
+                <div class="picture pic2">
+                    <img src="/Images/Base (2).png">
+                </div></a>
+            <div class="card_content2">
+                <h2>Olivia Wilde</h2>
+                <a href="#">Lead Designer</a>
+                <p>Nemo enim ipsam voluptas 
+                    sit aspernatur aut odit aut 
+                    fugit, sed quia consequuntur 
+                    magni dolores eos qui ratione 
+                    voluptatem nesciunt.</p>
+            </div>
+            <div class="contacts">
+                <a href="#">
+                    <div class="icon"><svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.979 0.939929H5.328C4.88872 0.897675 4.4455 0.952033 4.02933 1.09886C3.61316 1.2457 3.23408 1.48147 2.91856 1.79003C2.60305 2.09859 2.35872 2.47245 2.20265 2.88524C2.04659 3.29804 1.98254 3.7398 2.015 4.17992V5.98998H0.0149994L0.0209961 7.99999H2.01401L1.98399 16.01H5.01401V8.03002L6.752 7.99999L7.37601 5.98998H4.98199V3.92992C4.98184 3.79779 5.00995 3.66725 5.06441 3.54686C5.11887 3.42648 5.19842 3.31904 5.29776 3.23192C5.3971 3.1448 5.51392 3.08002 5.64038 3.04174C5.76684 3.00345 5.90003 2.99261 6.03101 3.01H6.96899L6.979 0.939929Z" fill="white"/>
+                        </svg>
+                        </div></a><a href="#">
+                    <div class="icon"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.984 1.65987C16.3498 1.94541 15.6751 2.13099 14.984 2.20992C15.712 1.76496 16.2555 1.07279 16.515 0.259968C15.8333 0.670139 15.0849 0.95791 14.304 1.11007C13.8253 0.595272 13.2019 0.237491 12.5159 0.0841867C11.8299 -0.0691178 11.1136 -0.0108905 10.4613 0.251179C9.80905 0.513248 9.25154 0.966876 8.8623 1.5522C8.47307 2.13753 8.27041 2.82714 8.28101 3.52999C8.28067 3.8025 8.31085 4.07425 8.371 4.34005C6.98146 4.26554 5.6235 3.89726 4.38672 3.25948C3.14994 2.6217 2.06248 1.72872 1.19601 0.639851C0.886333 1.18195 0.723613 1.79556 0.723999 2.41988C0.721356 2.99937 0.861257 3.57077 1.13138 4.08345C1.4015 4.59614 1.79356 5.03458 2.27301 5.36007C1.71854 5.34945 1.17588 5.19786 0.696014 4.91988V4.96993C0.691559 5.78002 0.966978 6.56678 1.47571 7.19722C1.98444 7.82767 2.69526 8.26309 3.48801 8.42989C3.18955 8.51412 2.88113 8.55797 2.57101 8.56002C2.35071 8.56206 2.13088 8.5385 1.91599 8.48995C2.13205 9.18914 2.56235 9.80269 3.14606 10.2441C3.72976 10.6855 4.4374 10.9324 5.16901 10.9499C3.94136 11.9304 2.41612 12.463 0.845001 12.4599C0.567486 12.4635 0.290095 12.4467 0.0150146 12.4099C1.59973 13.4507 3.45507 14.0036 5.35101 14C6.66425 13.9978 7.96399 13.735 9.1749 13.2268C10.3858 12.7185 11.4838 11.975 12.4051 11.0393C13.3265 10.1035 14.0529 8.994 14.5423 7.77535C15.0317 6.5567 15.2743 5.25301 15.256 3.9399C15.256 3.7899 15.256 3.63995 15.246 3.48995C15.9269 2.9852 16.515 2.36592 16.984 1.65987Z" fill="white"/>
+                        </svg></div></a>
+                    <a href="#"><div class="icon"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46399 1.91991C3.46424 2.16019 3.41356 2.39792 3.31528 2.61718C3.217 2.83644 3.07336 3.03244 2.89383 3.19213C2.71429 3.35182 2.50297 3.47165 2.27374 3.54369C2.04452 3.61574 1.80261 3.63837 1.564 3.6101C1.23585 3.57319 0.925425 3.44201 0.670258 3.23241C0.415091 3.02282 0.226102 2.74367 0.12616 2.42895C0.0262176 2.11422 0.0196198 1.77739 0.107117 1.45898C0.194614 1.14056 0.372468 0.854219 0.619202 0.634756C0.865935 0.415294 1.17097 0.271935 1.49741 0.222159C1.82385 0.172383 2.15772 0.218284 2.45865 0.354239C2.75958 0.490194 3.01467 0.710408 3.19308 0.988272C3.3715 1.26614 3.46559 1.5897 3.46399 1.91991ZM0 16.01V4.98998H3.01099V16.01H0ZM5.01901 4.98998H7.70001L8.021 6.1101C8.3798 5.59872 8.86695 5.1908 9.43344 4.92748C9.99993 4.66416 10.6257 4.55474 11.248 4.6101C13.469 4.6101 15.004 5.90009 15.004 9.10009V15.98H12.004V9.58007C12.0245 9.2798 11.9832 8.97848 11.8826 8.69481C11.7821 8.41115 11.6243 8.15117 11.4193 7.9309C11.2142 7.71063 10.9661 7.5346 10.6903 7.41405C10.4145 7.29351 10.117 7.23091 9.81601 7.22997C9.43429 7.23477 9.06362 7.35877 8.75592 7.58471C8.44822 7.81064 8.21888 8.12722 8.10001 8.48998C8.01348 8.76118 7.9759 9.0457 7.98901 9.33007V15.98H5.01199V4.98998H5.01901Z" fill="white"/>
+                        </svg></div></a>
+                    <a href="#"><div class="icon"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.60901 1.17993C1.09601 1.44993 6.84699 5.19008 7.09799 5.33008C7.38151 5.46179 7.69037 5.53003 8.00299 5.53003C8.31562 5.53003 8.62447 5.46179 8.90799 5.33008C9.15899 5.19008 14.908 1.44993 15.397 1.17993C15.886 0.909932 16.347 0.0600586 15.451 0.0600586H0.550996C-0.340003 0.0600586 0.12101 0.909932 0.60901 1.17993ZM15.609 3.23999C15.055 3.53999 9.252 7.20989 8.909 7.38989C8.62548 7.52161 8.31662 7.58984 8.004 7.58984C7.69138 7.58984 7.38252 7.52161 7.099 7.38989C6.76 7.20989 0.956988 3.53999 0.398988 3.23999C0.00898847 3.02999 0.0130021 3.26996 0.0130021 3.45996V11.02C0.0514699 11.2688 0.168161 11.4988 0.346163 11.6768C0.524164 11.8548 0.754217 11.9715 1.00299 12.01H15C15.2489 11.9716 15.4791 11.855 15.6573 11.677C15.8354 11.499 15.9523 11.2689 15.991 11.02V3.45996C15.991 3.26996 15.994 3.02999 15.6 3.23999H15.609Z" fill="white"/>
+                        </svg></div></a>
+                
+            </div>
+                
+
+        </div>
+        <div class="cards2 hidden1">
+            <a href="#">
+            <div class="picture pic2">
+                <img src="/Images/Base (3).png">
+            </div></a>
+            <div class="card_content2">
+                <h2>Ashley Greene</h2>
+                <a href="#">SEO / Developer</a>
+                <p>Sed ut perspiciatis unde 
+                    omnis iste natus error sit 
+                    voluptatem accusantium 
+                    doloremque laudantium, 
+                    totam rem aperiam.</p>
+            </div>
+            <div class="contacts">
+                <a href="#">
+                    <div class="icon"><svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.979 0.939929H5.328C4.88872 0.897675 4.4455 0.952033 4.02933 1.09886C3.61316 1.2457 3.23408 1.48147 2.91856 1.79003C2.60305 2.09859 2.35872 2.47245 2.20265 2.88524C2.04659 3.29804 1.98254 3.7398 2.015 4.17992V5.98998H0.0149994L0.0209961 7.99999H2.01401L1.98399 16.01H5.01401V8.03002L6.752 7.99999L7.37601 5.98998H4.98199V3.92992C4.98184 3.79779 5.00995 3.66725 5.06441 3.54686C5.11887 3.42648 5.19842 3.31904 5.29776 3.23192C5.3971 3.1448 5.51392 3.08002 5.64038 3.04174C5.76684 3.00345 5.90003 2.99261 6.03101 3.01H6.96899L6.979 0.939929Z" fill="white"/>
+                        </svg>
+                        </div></a><a href="#">
+                    <div class="icon"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.984 1.65987C16.3498 1.94541 15.6751 2.13099 14.984 2.20992C15.712 1.76496 16.2555 1.07279 16.515 0.259968C15.8333 0.670139 15.0849 0.95791 14.304 1.11007C13.8253 0.595272 13.2019 0.237491 12.5159 0.0841867C11.8299 -0.0691178 11.1136 -0.0108905 10.4613 0.251179C9.80905 0.513248 9.25154 0.966876 8.8623 1.5522C8.47307 2.13753 8.27041 2.82714 8.28101 3.52999C8.28067 3.8025 8.31085 4.07425 8.371 4.34005C6.98146 4.26554 5.6235 3.89726 4.38672 3.25948C3.14994 2.6217 2.06248 1.72872 1.19601 0.639851C0.886333 1.18195 0.723613 1.79556 0.723999 2.41988C0.721356 2.99937 0.861257 3.57077 1.13138 4.08345C1.4015 4.59614 1.79356 5.03458 2.27301 5.36007C1.71854 5.34945 1.17588 5.19786 0.696014 4.91988V4.96993C0.691559 5.78002 0.966978 6.56678 1.47571 7.19722C1.98444 7.82767 2.69526 8.26309 3.48801 8.42989C3.18955 8.51412 2.88113 8.55797 2.57101 8.56002C2.35071 8.56206 2.13088 8.5385 1.91599 8.48995C2.13205 9.18914 2.56235 9.80269 3.14606 10.2441C3.72976 10.6855 4.4374 10.9324 5.16901 10.9499C3.94136 11.9304 2.41612 12.463 0.845001 12.4599C0.567486 12.4635 0.290095 12.4467 0.0150146 12.4099C1.59973 13.4507 3.45507 14.0036 5.35101 14C6.66425 13.9978 7.96399 13.735 9.1749 13.2268C10.3858 12.7185 11.4838 11.975 12.4051 11.0393C13.3265 10.1035 14.0529 8.994 14.5423 7.77535C15.0317 6.5567 15.2743 5.25301 15.256 3.9399C15.256 3.7899 15.256 3.63995 15.246 3.48995C15.9269 2.9852 16.515 2.36592 16.984 1.65987Z" fill="white"/>
+                        </svg></div></a>
+                    
+                    <a href="#"><div class="icon"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.60901 1.17993C1.09601 1.44993 6.84699 5.19008 7.09799 5.33008C7.38151 5.46179 7.69037 5.53003 8.00299 5.53003C8.31562 5.53003 8.62447 5.46179 8.90799 5.33008C9.15899 5.19008 14.908 1.44993 15.397 1.17993C15.886 0.909932 16.347 0.0600586 15.451 0.0600586H0.550996C-0.340003 0.0600586 0.12101 0.909932 0.60901 1.17993ZM15.609 3.23999C15.055 3.53999 9.252 7.20989 8.909 7.38989C8.62548 7.52161 8.31662 7.58984 8.004 7.58984C7.69138 7.58984 7.38252 7.52161 7.099 7.38989C6.76 7.20989 0.956988 3.53999 0.398988 3.23999C0.00898847 3.02999 0.0130021 3.26996 0.0130021 3.45996V11.02C0.0514699 11.2688 0.168161 11.4988 0.346163 11.6768C0.524164 11.8548 0.754217 11.9715 1.00299 12.01H15C15.2489 11.9716 15.4791 11.855 15.6573 11.677C15.8354 11.499 15.9523 11.2689 15.991 11.02V3.45996C15.991 3.26996 15.994 3.02999 15.6 3.23999H15.609Z" fill="white"/>
+                        </svg></div></a>
+                
+             </div>
+                
+
+        </div>
+
+
+        </div>
+
+
+    </div></section>
+    <section class="skills section">
+        <div class="services_container container">
+            <div class="text_box">
+            <h1 class="section_title team_text">WE GOT SKILLS!</h1>
+            <div class="line"></div>
+            <p class="section_subtitle team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="services_cards1">
+            <div class="cards3">
+                <div class="picture">
+                <div class=" circular-progress hidden1">
+                    <div class="value-container ">
+                        0%
+                    </div>
+                </div>
+                </div>
+                <div class="card_content3">
+                    <h2>Web Design</h2>
+                    
+                </div>
+
+            </div>
+            <div class="cards3">
+                    <div class="picture">
+                <div class="circular-progress circular-progress1 hidden1">
+                    <div class="value-container value-container1">
+                        0%
+                    </div>
+                </div>
+                </div>
+                <div class="card_content3">
+                    <h2>HTML / CSS</h2>
+                   
+                </div>
+
+            </div>
+            <div class="cards3">
+                <div class="picture">
+                <div class="circular-progress circular-progress2 hidden1">
+                    <div class="value-container value-container2">
+                        0%
+                    </div>
+                </div>
+                </div>
+                <div class="card_content3">
+                    <h2>GRAPHIC DESIGN</h2>
+                    
+                </div>
+
+            </div>
+            <div class="cards3">
+                <div class="picture">
+                <div class="circular-progress circular-progress3 hidden1">
+                    <div class="value-container value-container3">
+                        0%
+                    </div>
+                </div>
+                </div>
+                <div class="card_content3">
+                    <h2>UI / UX</h2>
+                   
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+        </div>
+        
+
+    </section>
+    <section class="portfolio section">
+        <div class="services_container container">
+            <div class="text_box">
+            <h1 class="section_title portfolio_title">OUR PORTFOLIO</h1>
+            <div class="line"></div>
+            <p class="section_subtitle portfolio_subtitle">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br>
+                consectetur, adipisci velit, sed quia non numquam</p>
+                <div class="categories">
+                    <button>ALL</button>
+                    <button>WEB</button>
+                    <button>APPS</button>
+                    <button>ICONS</button>
+
+                </div>
+            </div>
+            <div class="services_cards2">
+            <div class="cards4">
+                <div class="picture1 hidden1">
+                    <img src="/Images/1.png">
+                </div>
+                <div class="card_content4">
+                    <h2>ISOMETRIC PERSPECTIVE MOCK-UP</h2>
+                    
+                </div>
+
+            </div>
+            <div class="cards4">
+                <div class="picture1 hidden1">
+                    <img src="/Images/2.png">
+                </div>
+                <div class="card_content4">
+                    <h2>TIME ZONE APP UI</h2>
+                    
+                </div>
+
+            </div>
+            <div class="cards4">
+                <div class="picture1 hidden1">
+                    <img src="/Images/3.png">
+                </div>
+                <div class="card_content4">
+                    <h2>VIRO MEDIA PLAYERS UI</h2>
+                   
+                </div>
+
+            </div>
+            <div class="cards4">
+                <div class="picture1 hidden1">
+                    <img src="/Images/4.png">
+                </div>
+                <div class="card_content4">
+                    <h2>BLOG / MAGAZINE FLAT UI KIT</h2>
+                   
+                </div>
+
+            </div>
+
+
+            </div>
+            <div class="load">
+                <a href="#">
+            <button class="work_with1">LOAD MORE PROJECTS</button>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="about section">
+        <div class="services_container container">
+            <div class="text_box">
+            <h1 class="section_title">WHAT POEPLE SAY ABOUT US</h1>
+            <div class="line"></div>
+            <p class="section_subtitle">Our clients love us!</p>
+            </div>
+            <div class="services_cards3">
+            <div class="cards5 hidden1">
+                <div class="picture2">
+                    <img src="/Images/Mugshot.png">
+                </div>
+                <div class="card_content5">                 
+                    <p>“Nullam dapibus blandit orci,
+                        viverra gravida dui lobortis eget. Maecenas                     
+                        fringilla urna eu nisl scelerisque.”</p> 
+                        <h2>Chanel Iman</h2>
+                        <a href="#">CEO of Pinterest</a>
+                </div>
+
+            </div>
+            <div class="cards5 hidden1">
+                <div class="picture2">
+                    <img src="/Images/Mugshot (1).png">
+                </div>
+                <div class="card_content5">                 
+                    <p> “Vivamus luctus urna sed urna ultricies
+                        ac tempor dui sagittis. In condimentum 
+                        facilisis porta.” </p>
+                        <h2>ADRIANA LIMA</h2>
+                        <a href="#">Founder of Instagram</a>
+
+                </div>
+
+            </div>
+            <div class="cards5 hidden1">
+                <div class="picture2 ">
+                    <img src="/Images/Mugshot (2).png">
+                </div>
+                <div class="card_content5">                   
+                    <p>“Vivamus luctus urna sed urna ultricies
+                        ac tempor dui sagittis. In condimentum 
+                        facilisis porta.”</p>
+                        <h2>ANNE HATHAWAY</h2>
+                        <a href="#">Lead Designer at Behance</a>
+                </div>
+
+            </div>
+            <div class="cards5 hidden1">
+                <div class="picture2">
+                    <img src="/Images/Mugshot (3).png">
+                </div>
+                <div class="card_content5">                  
+                    <p>“Phasellus non purus vel arcu tempor 
+                        commodo. Fusce semper, purus vel luctus 
+                        molestie, risus sem cursus neque.”</p>
+                         <h2>EMMA STONE</h2>
+                         <a href="#">Co-Founder of Shazam</a>
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+        </div>
+        
+
+    </section>
+    <section class="touch section">
+        <div class="services_container container">
+            <div class="text_box">
+            <h1 class="section_title">GET IN TOUCH</h1>
+            <div class="line"></div>
+            <p class="section_subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+            </div>
+            <div class="services_cards6">
+                <form>
+                    <div class="get-in">
+                        <div class="field">
+                            <input type="text" placeholder="Your Name*">
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Your Email*">
+                        </div>
+                    </div>
+                        <div class="text">
+                            <textarea placeholder="Your Message*"></textarea>
+                        </div>
+
+
+                    
+                </form>
+                
+                    
+            
+
+            
+
+
+            </div>
+
+            <div class="submit">
+                <button>SEND MESSAGE</button>
+            
+            </div>
+        </div>
+        
+
+    </section>
+    <footer class="footer section">
+        <div class="footer_container container">
+            <nav class="nav2">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">LinkdIn</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
